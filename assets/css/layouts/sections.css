@@ -1,0 +1,141 @@
+
+.bg-intro{
+    padding-top: 18rem;
+    padding-bottom: 20rem;
+    font-size: 10rem;
+    background: url(../../images/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+section {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+.section-wrap {
+    height: 100%;
+}
+
+.brief {
+    margin-top: 10rem !important;
+}
+#process {
+    background-color: #e6eff3;
+}
+#sponsors {
+    background-color: #333;
+}
+
+.bg-grey {
+background-color: #eef7ff;
+}
+.skew {
+    transform: skewY(-5deg);
+    padding-top: 20rem;
+    margin-top: -3rem;
+}
+.unskew-content {
+    transform: skewY(5deg);
+}
+.page-btn {
+    position: absolute;
+    bottom: -22px;
+    left: 40%;
+}
+
+.section-benefit {
+    border: 1px solid #E2E2E2;
+    box-shadow: 0 10px 45px 0 rgba(164,164,164,0.3);
+    padding: 6rem;
+}
+@media (max-width: 768px) {
+    .section-benefit {
+        display: none !important;
+    }
+}
+.section-benefit:not(:first-child) {
+    display: none;
+
+}
+.section-benefit p {
+    font-size: 2rem;
+}
+.section-benefit footer {
+    font-size: 1.6rem;
+}
+div.benefit-contents {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all .5s
+
+}
+.section-benefit-0 + .benefit-contents-0:hover {
+    display: block;
+
+}
+div.benefit-contents:hover {
+    opacity: 1;
+    transform: translateX(1rem)
+}
+.section-benefit div.benefit-contents:hover {
+    transform: translateX(-4rem);
+}
+
+.benefit__icon {
+    color: #4f86c6;
+    font-size: 3.5rem;
+    margin-right:3rem;
+}
+
+
+.section-benefit-0::after {
+    content: "";
+     background: url(../../images/arrow.png) no-repeat top left;
+     width: 3.8rem;
+     height: 6.6rem;
+     z-index: 999;
+     top: 10%;
+    right: -3.8rem;
+    display: inline-block;
+    position: absolute;
+    background-size: 38px 32px
+
+}
+.section-benefit-1::after {
+    content: "";
+    background: url(../../images/arrow.png) no-repeat top left;
+    width: 3.8rem;
+    height: 6.6rem;
+    z-index: 999;
+    top: 50%;
+    right: -3.8rem;
+    display: inline-block;
+    position: absolute;
+    background-size: 38px 32px
+
+}
+
+.section-benefit-2::after {
+    content: "";
+    background: url(../../images/arrow.png) no-repeat top left;
+    width: 3.8rem;
+    height: 6.6rem;
+    z-index: 999;
+    top: 85%;
+    right: -3.8rem;
+    display: inline-block;
+    position: absolute;
+    background-size: 38px 32px
+
+}
+
+.sponsor {
+    height: 6rem;
+    padding: 1rem 3rem;
+    margin-bottom: 10rem;
+}
+ footer {
+     background-color: #13181b;
+     width: 100%;
+     position: absolute;
+ }

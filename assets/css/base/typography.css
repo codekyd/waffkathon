@@ -1,0 +1,31 @@
+body {
+    background: #ffffff;
+    font-family: 'niramit', sans-serif;
+}
+p {
+    font-size: 1.6rem;
+}
+p.sub-intro {
+    font-size: 2rem
+}
+h1,h2,h6 {
+    font-family: 'sfns display', sans-serif;
+}
+h1.intro {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3rem;
+}
+h6  {
+    font-size: 1.8rem;
+}
+.btn-link,.card-body {
+    font-size: 1.6rem;
+}
+.footer-paragraph {
+    height: 5rem;
+    font-size: 1.5rem;
+    color: #8792a1;
+}

@@ -1,0 +1,15 @@
+/* imports all css files */
+
+/* import base files from base folders */
+@import "base/base.css";
+@import "base/animations.css";
+@import "base/typography.css";
+
+/* import components files from components folders */
+@import "components/buttons.css";
+@import "components/prize.css";
+
+/* import layouts files from layouts folders */
+@import "layouts/mobile-navbar.css";
+@import "layouts/navbar.css";
+@import "layouts/sections.css";

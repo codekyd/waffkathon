@@ -1,0 +1,58 @@
+
+
+.logo-box {
+    float: left;
+}
+.site-logo {
+    height: 4.5rem;
+
+}
+/* Logo */
+.logo-default {
+    display: block;
+}
+
+.logo-stick  {
+    display:none;
+}
+
+.nav-bar {
+    font-size: 1.7rem;
+    padding: 0.5rem 0rem;
+    transition-duration: 300ms;
+    transition-property: all;
+    /* background: #343434; */
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+.nav-menu li {
+    display: inline-block;
+    margin-left: 4rem;
+    vertical-align: middle;
+}
+
+nav ul a {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+}
+nav ul a.active {
+    color: rgb(255, 255, 255);
+}
+nav ul a:hover {
+    color: #fff;
+}
+
+
+
+nav ul a.active {
+    color: rgb(255, 255, 255);
+}
+nav ul a:hover, .nav-ctas:hover {
+    color: #fff;
+}
