@@ -2,6 +2,7 @@
 .bg-intro{
     padding-top: 18rem;
     padding-bottom: 20rem;
+    overflow: hidden;
     font-size: 10rem;
     background: url(../../images/bg-header.jpg);
     background-position: center;
@@ -158,7 +159,9 @@ div.benefit-contents:hover {
       filter: blur(.2rem) brightness(40%); }
 
       @media (max-width: 1025px) {
-
+        h1.intro {
+            font-size: 4rem;
+        }
       .figure-bio p {
           font-size: 1.2rem;
       }
@@ -245,7 +248,7 @@ header:before,
   top: 1.4rem;
   text-align: center;
   color: white;
-  left: 1.6rem;
+  left: 1.75rem;
   font-size: 1.6rem;
 }
 #timeline .timeline-item .timeline-content {
@@ -268,7 +271,7 @@ header:before,
   background: #272626;
   color: #fff;
   margin: -2rem -2rem 0 -2rem;
-  font-weight: bold;
+  font-weight: 700;
   -webkit-border-radius: .3rem .3rem 0 0;
   -moz-border-radius: .3rem .3rem 0 0;
   -ms-border-radius: .3rem .3rem 0 0;
