@@ -4,8 +4,10 @@
     padding-bottom: 20rem;
     overflow: hidden;
     font-size: 10rem;
-    background: url(../../images/bg-header.jpg);
-    background-position: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)),
+    url(../../../assets/images/bg-header.jpg) no-repeat fixed;
     background-size: cover;
     color: #fff;
 }
