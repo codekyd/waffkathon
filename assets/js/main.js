@@ -32,28 +32,28 @@ const HeaderSticky = function () {
     HeaderSticky.init();
 
     // animate the intro divs
-    $('.benefit-contents-0').hover(function () {
+    $('.focus-area-contents-0').hover(function () {
 
-        $('.section-benefit').css('display', 'none');
-        $('.section-benefit-0').css({
+        $('.section-focus-area').css('display', 'none');
+        $('.section-focus-area-0').css({
             'display': 'block',
             'animation': 'moveInRight 1s ease-out '
         });
 
     },
     ),
-        $('.benefit-contents-1').hover(function () {
-            $('.section-benefit').css('display', 'none');
-            $('.section-benefit-1').css({
+        $('.focus-area-contents-1').hover(function () {
+            $('.section-focus-area').css('display', 'none');
+            $('.section-focus-area-1').css({
                 'display': 'block',
                 'animation': 'moveInRight 1s ease-out '
             });
 
         }
         ),
-        $('.benefit-contents-2').hover(function () {
-            $('.section-benefit').css('display', 'none');
-            $('.section-benefit-2').css({
+        $('.focus-area-contents-2').hover(function () {
+            $('.section-focus-area').css('display', 'none');
+            $('.section-focus-area-2').css({
                 'display': 'block',
                 'animation': 'moveInRight 1s ease-out '
             });
