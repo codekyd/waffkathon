@@ -817,11 +817,24 @@ header:before,
 
 
 .sponsor {
-    height: 6rem;
+    height: 9rem;
     padding: 1rem 3rem;
     margin-bottom: 10rem;
 }
 
+
+/* CODE OF CONDUCT */
+#code-of-conduct {
+    padding-top:10rem;
+}
+ul {
+    list-style: none;
+}
+.cod {
+    /* font-size: 1.6rem; */
+    font-weight: bold;
+
+}
 /* FOOTER */
 
 footer {
