@@ -12,6 +12,8 @@ html {
     font-size: 62.5%; /*This defines what 1rem is --- the same as 10px;*/
     box-sizing: border-box;
 
+
+
 }
 
 /* ANIMATIONS */
@@ -61,6 +63,7 @@ html {
 body {
     background: #ffffff;
     font-family: 'niramit', sans-serif;
+    height: 100vh;
 }
 p {
     font-size: 1.6rem;
@@ -518,9 +521,15 @@ section {
     box-shadow: 0 10px 45px 0 rgba(164,164,164,0.3);
     padding: 6rem;
 }
+.mobile-intro {
+    display: none;
+}
 @media (max-width: 768px) {
     .section-focus-area {
         display: none !important;
+    }
+    .mobile-intro {
+        display: block !important;
     }
 }
 .section-focus-area:not(:first-child) {
@@ -566,7 +575,7 @@ div.focus-area-contents:hover {
     width: 3.8rem;
     height: 6.6rem;
     z-index: 999;
-    top: 30%;
+    top: 40%;
     right: -3.8rem;
     display: inline-block;
     position: absolute;
@@ -580,7 +589,7 @@ div.focus-area-contents:hover {
     width: 3.8rem;
     height: 6.6rem;
     z-index: 999;
-    top: 60%;
+    top: 70%;
     right: -3.8rem;
     display: inline-block;
     position: absolute;
@@ -814,6 +823,10 @@ header:before,
       }
 
       /* SPONSORS */
+
+      #sponsors {
+          /* background-color: #010101; */
+      }
 
 
 .sponsor {
