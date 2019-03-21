@@ -19,60 +19,39 @@ html {
 /* ANIMATIONS */
 
 /* ANIMATIONS */
+@font-face {
+    font-family: "bink";
+    src: url('../fonts/34E6DB_C_0.woff2') format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "bink-norm";
+    src: url('../fonts/34E6DB_D_0.woff2') format('woff2');
+    font-weight: normal;
+}
 
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-    60% {
-        transform: translateX(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(5rem);
-    }
-    60% {
-        transform: translateX(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-@keyframes moveInBottom {
-    0% {
-    transform: translateY(3rem);
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    transform: translate(0);
-    }
-}
 
 /* TYPOGRAPHY */
 
 body {
     background: #ffffff;
-    font-family: 'niramit', sans-serif;
+    color: #636060;
+    font-family: 'bink-norm', sans-serif;
+    font-weight: 400;
+    letter-spacing: -.015rem;
     height: 100vh;
 }
 p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+}
+span.submit {
+    font-size: 1.4rem;
 }
 p.sub-intro {
     font-size: 2rem
 }
 h1,h2,h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'bink', sans-serif;
     letter-spacing: .1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -118,17 +97,6 @@ ion-icon {
 .btn-link,.card-body {
     font-size: 1.6rem;
 }
-.footer-paragraph {
-    font-size: 1.6rem;
-    color: #8792a1;
-}
-
-ion-icon .footer-paragraph {
-    font-size: 2rem;
-    color: #8792a1;
-
-}
-
 
 
 /* MOBILE NAVBAR */
@@ -215,8 +183,8 @@ ion-icon .footer-paragraph {
 
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-family: 'bink', sans-serif;
     padding: 1rem 2rem;
     color: #fff;
     text-decoration: none;
@@ -309,8 +277,9 @@ ion-icon .footer-paragraph {
 }
 
 .nav-bar {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 2.5rem 4rem;
+    font-family: 'bink', sans-serif;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -370,6 +339,7 @@ nav ul a:hover, .nav-ctas:hover {
     color: #ffffff;
 }
 
+
 /* BUTTONS */
 /* styles for all buttons */
 .btn {
@@ -380,92 +350,24 @@ nav ul a:hover, .nav-ctas:hover {
     text-decoration: none;
     padding: 1.5rem 6rem;
     display: inline-block;
-    border-radius: 5rem;
+    font-size: 1.6rem;
     transition: all .2s;
     position: relative;
+    transition: all .3s
+}
+
+.btn-participate {
+    color: #ffffff;
+    border-radius: .5rem;
+    background-color: #384E77;
+}
+
+a.btn-participate:hover {
+    color: #fff !important;
+
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 1s;
-}
-.btn:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn-round {
-    border-radius: 5rem;
-}
-
-
-.btn-participate {
-    background-color: #384E77;
-    color: #ffffff;
-    font-size: 2rem !important;
-    padding: 1rem 5rem !important;
-}
-a.btn-participate:hover {
-    color: #fff !important;
-}
-.btn-participate::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .5s;
-}
-.btn-participate:hover::after {
-    transform: scaleX(1.5) scaleY(1.5);
-    opacity: 0;
-    color: #fff;
-}
-.btn-participate::after {
-    background-color: #384E77;
-}
-
-
-.btn-participate {
-    background-color: #4f86c6;
-    color: #ffffff;
-    font-size: 2rem !important;
-}
-a.btn-participate:hover {
-    color: #fff !important;
-}
-.btn-participate::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .5s;
-}
-.btn-participate:hover::after {
-    transform: scaleX(1.5) scaleY(1.5);
-    opacity: 0;
-    color: #fff;
-}
-.btn-participate::after {
-    background-color: #4f86c6;
-}
 
 
 @media (max-width: 420px) {
@@ -541,6 +443,7 @@ div.focus-area-contents {
     cursor: pointer;
     opacity: 0.7;
     margin-bottom: 2rem;
+    border-radius: 0.5rem;
     transition: all .5s
 
 }
@@ -751,10 +654,9 @@ header:before,
 
 /* PRIZE */
 .price-card {
-    border: 1px solid #eeeeee;
+    border: 1px solid #dad7d7;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); */
     height: 45rem;
 }
 
@@ -780,6 +682,7 @@ header:before,
     .figure-img {
       transform: translateX(0rem) scale(1);
       backface-visibility: hidden;
+      height: 30rem;
       transition: all .5s; }
 
     .figure-bio {
@@ -823,21 +726,30 @@ header:before,
       }
 
       /* SPONSORS */
-
-      #sponsors {
-          /* background-color: #010101; */
-      }
-
-
 .sponsor {
     height: 9rem;
     padding: 1rem 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    transition: all .5s;
+}
+.sponsor:hover {
+    transform: rotateZ(7deg)
+}
+.middled {
+    margin: 0 auto;
 }
 
+label {
+    font-size: 1.8rem;
+}
+.form-control {
+    padding: 2rem 2rem;
+    font-size: 1.6rem;
+    color: #8792a1;
+}
 
 /* CODE OF CONDUCT */
-#code-of-conduct {
+#code-of-conduct,.submit-div, .sponsor-div {
     padding-top:10rem;
 }
 ul {
@@ -845,16 +757,28 @@ ul {
 }
 .cod {
     /* font-size: 1.6rem; */
-    font-weight: bold;
+    font-weight: 600;
 
 }
+
 /* FOOTER */
 
 footer {
-    height: 4rem;
     padding-top: 1rem;
     padding-bottom: 5rem;
     background-color: #13181b;
     width: 100%;
     position: absolute;
 }
+
+.footer-paragraph {
+    font-size: 1.3rem;
+    color: #8792a1;
+}
+
+ion-icon .footer-paragraph {
+    font-size: 2rem;
+    color: #8792a1;
+
+}
+

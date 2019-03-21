@@ -116,32 +116,10 @@
 
 
               <div class="container">
-                  <section class="sponsor-div">
-                      <form action="mailto:issues@waffkaton.com" class="sponsor-div__form">
-                          <div class="row">
-                              <div class="col-md-6 middled">
-                         <div class="form-group">
-                                <label for="company-name">Company Name :</label>
-                                <input type="text" name="company-name"  class="form-control " required placeholder="Please Enter Your Company Name" id="">
-                         </div>
-                         <div class="form-group">
-                                <label for="Your-name">Your Name :</label>
-                                <input type="text" name="Your-name"  class="form-control" required placeholder="Please Enter Your  Name" id="">
-                         </div>
-                         <div class="form-group">
-                                <label for="email">Email Address:</label>
-                                <input type="email" name="email"  id="email" class="form-control" required placeholder="Please Enter Your  Email Address" id="">
-                         </div>
-
-                         <div class="form-group">
-                                <label for="message">Your Message :</label>
-                                <textarea name="message" id="message" class="form-control" required cols="30" rows="10"></textarea>
-                         </div>
-                         <button class="btn btn-participate " type="submit"><ion-icon class="" name="paper-plane"></ion-icon> <span class="submit">Submit</span></button>
-                         </div>
-                         </div>
-
-                      </form>
+                  <section class="submit-div text-center    ">
+                      <h1>Opps Registration has not started yet, please check back in :
+                      </h1>
+                      <h1 id="countDown"></h1>
                   </section>
 
 
@@ -164,5 +142,31 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+
+    const countDown = document.querySelector('#countDown');
+    const setDate = () => {
+        let setDay = new Date('28 april 2019');
+        const now = new Date();
+        for (let i = 0; i < setDay.length; i++) {
+            const element = setDay[i];
+            console.log(element)
+            if (now < setDay) {
+            setDay--
+            console.log(setDay.getSeconds());
+        }
+
+        }
+
+        // console.log(seconds);
+        countDown.style.display = 'block';
+        countDown.textContent = setDay;
+
+    }
+    setInterval(setDate, 1000)
+    setDate();
+
+</script>
 
 </html>
