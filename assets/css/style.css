@@ -71,6 +71,9 @@ h2 {
 h6  {
     font-size: 1.8rem;
 }
+h1#countDown {
+    font-size: 5rem;
+}
 h6.judge-name {
     font-weight: bold;
     font-size: 1.5rem;
@@ -255,6 +258,7 @@ ion-icon {
 }
 .site-logo {
     height: 5rem;
+    margin-right: 5rem;
     margin-top: -1rem;
 }
 /* Logo */
@@ -291,7 +295,6 @@ ion-icon {
 .nav-bar__sticky {
     background: #272626;
     box-shadow: 0 10px 60px 0 rgba(79, 134, 198, 0.2);
-    padding: 1rem 3rem 1rem 5rem;
 }
 .nav-item .dropdown-menu a {
     text-transform: capitalize;
@@ -441,7 +444,6 @@ section {
 
 div.focus-area-contents {
     cursor: pointer;
-    opacity: 0.7;
     margin-bottom: 2rem;
     border-radius: 0.5rem;
     transition: all .5s

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/waffkathon-logo-green.png" type="image/x-icon">
 </head>
 <body>
       <!-- Mobile menu -->
@@ -119,7 +120,7 @@
                   <section class="submit-div text-center    ">
                       <h1>Opps Registration has not started yet, please check back in :
                       </h1>
-                      <h1 id="countDown"></h1>
+                      <h1 id="countDown">APRIL 28 2019 </h1>
                   </section>
 
 
@@ -128,7 +129,7 @@
                 <div class="footer">
 
                     <div class="container">
-                      <p class="footer-paragraph p-2 m-0">Have any issues or questions? contact us <a href="mailto:issues@waffkaton.com">issues@waffkaton.com</a></p>
+                        <p class="footer-paragraph p-2 m-0">Want to support Waffkathon or ask questions? contact us <a href="mailto:info@waffkaton.com">info@waffkaton.com</a></p>
                         <p class="text-center footer-paragraph m-0 ">© 2019 Waffkathon
                         <a href="https://facebook.com/waffkathon" ><ion-icon  class="footer-paragraph" name="logo-facebook"></ion-icon></a>
                       <a href="https://instagram.com/waffkathon" ><ion-icon class="footer-paragraph" name="logo-instagram"></ion-icon></a>
@@ -143,30 +144,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<script>
 
-    const countDown = document.querySelector('#countDown');
-    const setDate = () => {
-        let setDay = new Date('28 april 2019');
-        const now = new Date();
-        for (let i = 0; i < setDay.length; i++) {
-            const element = setDay[i];
-            console.log(element)
-            if (now < setDay) {
-            setDay--
-            console.log(setDay.getSeconds());
-        }
-
-        }
-
-        // console.log(seconds);
-        countDown.style.display = 'block';
-        countDown.textContent = setDay;
-
-    }
-    setInterval(setDate, 1000)
-    setDate();
-
-</script>
 
 </html>
