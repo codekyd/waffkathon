@@ -691,7 +691,6 @@ header:before,
     .figure-img {
       transform: translateX(0rem) scale(1);
       backface-visibility: hidden;
-      height: 30rem;
       transition: all .5s; }
 
     .figure-bio {
